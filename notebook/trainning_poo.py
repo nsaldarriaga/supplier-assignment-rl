@@ -21,8 +21,8 @@ train_experiences = pre_date[-5000:] + post_date  # Últimos 5000 antes de date 
 validation_experiences = post_date[-500:]  # Últimos 500 datos para validación
 
 # Crear entornos separados para entrenamiento y validación
-train_env = AsignacionEnv(experiences=train_experiences, priority=True)
-eval_env = AsignacionEnv(experiences=validation_experiences, priority=True)
+train_env = AsignacionEnv(experiences=train_experiences, priority_supplier_enabled=True)
+eval_env = AsignacionEnv(experiences=validation_experiences, priority_supplier_enabled=True)
 
 # Verificar el entorno
 check_env(train_env, warn=True)
@@ -62,7 +62,7 @@ print("Modelo guardado exitosamente")
 
 # Evaluar en datos de marzo específicamente
 print("\nEvaluando modelo en datos de marzo...")
-test_env = AsignacionEnv(experiences=post_date, priority=True)
+test_env = AsignacionEnv(experiences=post_date, priority_supplier_enabled=True)
 obs, _ = test_env.reset()
 total_reward = 0
 total_steps = 0
