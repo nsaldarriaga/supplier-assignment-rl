@@ -9,11 +9,11 @@ El objetivo principal es mejorar la eficiencia logística optimizando la distrib
 
 ## 📂 Estructura del Proyecto
 
-- `data/` ➔ Datasets utilizados para entrenamiento y validación del agente.
-- `notebooks/` ➔ Notebooks de definición de entorno, entrenamiento y experimentación.
-- `src/` ➔ Código fuente: funciones auxiliares, definición del agente, helpers.
-- `models/` ➔ Modelos entrenados y versiones guardadas.
-- `docs/` ➔ Documentación técnica del proyecto.
+- `data/` ➔ Datasets utilizados para entrenamiento y validación del agente (no incluidos en el repositorio por confidencialidad).
+- `notebooks/` ➔ Notebooks de definición de entorno y entrenamiento del agente RL.
+- `src/` ➔ Código fuente auxiliar (pendiente de incluir en futuras versiones).
+- `models/` ➔ Modelos entrenados (no incluidos en esta versión pública).
+- `docs/` ➔ Documentación técnica (en construcción).
 
 ---
 
@@ -44,12 +44,6 @@ Se irán publicando progresivamente los notebooks de experimentación, scripts d
 
 ---
 
-## 📜 Licencia
-
-Este proyecto es de acceso abierto bajo términos de licencia a definir. (🚧 pendiente)
-
----
-
 ## 📦 Notas sobre reproducibilidad
 
 Este repositorio no incluye el archivo `rl_experiences.pkl` utilizado para entrenar el agente, ya que contiene datos generados internamente para simulaciones de entrenamiento.
@@ -57,6 +51,8 @@ Este repositorio no incluye el archivo `rl_experiences.pkl` utilizado para entre
 Para reproducir el proceso de entrenamiento:
 - Se debe generar un conjunto de experiencias (`experiences`) siguiendo la estructura esperada por el entorno `AsignacionEnv`.
 - También es posible modificar los notebooks para crear experiencias sintéticas si se desea realizar pruebas independientes.
+
+El modelo entrenado (`assignment_model.zip`) tampoco está incluido por razones de confidencialidad.
 
 ---
 
